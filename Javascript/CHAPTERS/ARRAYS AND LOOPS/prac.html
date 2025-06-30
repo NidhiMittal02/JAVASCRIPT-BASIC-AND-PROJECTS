@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr = [5,6];
+    arr.push(7);
+    arr.unshift(4);
+    console.log(arr);
+
+    function getelement(arr,index){
+      return arr[index-1];
+    }
+    let arr2 = [1,2,3,4,5];
+    console.log(getelement(arr2,3));
+
+    functionarrCopy(arr3)
+    {
+       return arr3.slice(0,arr3.length);
+    }
+
+    let arr3 = [1,2,3,4,5];
+    let arr4 =arrCopy(arr3);
+    arr4[0]=null;
+    console.log(arr3);
+    console.log(arr4);
+
+    
+    function isprime(num)
+    {
+      for(let i = 2; i<num;i++)
+    {
+      if(num%i==0)
+      {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(isprime(5)); 
+
+  let num=2;
+  let count = 0;
+  while(true)
+  {
+    if(isprime(num))
+  {
+    console.log(num);
+    count++;
+    if(count>=5)
+  {
+    break;
+  }
+  }
+  num++;
+  }
+
+
+   for(let i=10;i>0;i--)
+   {
+     console.log(i);
+   }
+
+
+   let num4 =[1,-6,5,7,-98];
+   for(let i=0;i<num4.length;i++)
+   {
+     if(num4[i]<0) continue;
+       console.log(num4[i]);
+
+   }
+
+  let arr5=['a','b','c','d','e'];
+  let result = '';
+  for(let i=0;i<arr5.length;i++)
+  {
+    result += arr5[i]+'';
+  }
+  console.log(result);
+
+
+
+  </script>
+  
+</body>
+</html>
